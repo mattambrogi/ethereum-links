@@ -1,0 +1,71 @@
+.mainContainer {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  background-color: #FAF9F6;
+}
+
+a {
+  color:black;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 3px;
+}
+
+.dataContainer {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 500px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: black;
+  margin-top: 16px;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  
+}
+
+.messageForm{
+  align-items:center;
+  text-align: center;
+}
+
+.messageForm label{
+  text-decoration:underline;
+}
+
+#message{
+  margin-top:16px;
+  text-align: center;
+  display:block;
+  width: 100%
+}
+
+.allWavesHeader {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.transactionDetail {
+  color:grey;
+  margin-top: 8px;
+}
