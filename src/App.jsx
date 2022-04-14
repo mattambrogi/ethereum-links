@@ -9,7 +9,7 @@ export default function App() {
   const [message, setMessage] = useState("");
   const [allWaves, setAllWaves] = useState([]);
   const [loading, setLoading] = useState(false)
-  const contractAddress ="0x2E5A48138d765C075f3EAc0cE52ec9Ad5e09f3b1"
+  const contractAddress ="0xC221dcfD27EBCf0164A7BA900CA9bB30ed3BCF6f"
   const contractABI = abi.abi;
   
   const checkIfWalletIsConnected = async () => {
@@ -182,7 +182,7 @@ export default function App() {
         </div>
 
         <div className="bio">
-          <p>I'm <a href="mattambrogi.com">Matt</a>. This is a site for my friends who are into Ethereum and reading.  </p>
+          <p>I'm <a href="http://mattambrogi.com/">Matt</a>. This is a site for my friends who are into Ethereum and reading.  </p>
           <p>Start by connecting your MetaMask wallet. Then you can send me a link to something you think I should read!</p>
           <p>Every link will be stored as a transcation on the Ethereum blockchain. On top of that, the smart contract that powers this app may randomly reward you by sending a little bit of ETH to your wallet!</p>
           <p>Note: you can't send more than one link in an hour.</p>
@@ -204,7 +204,7 @@ export default function App() {
 
         {loading && (
           <div className="bio">
-            Adding your wave to the blockchain...
+            Mining transaction...
           </div>
         )}
 
@@ -214,7 +214,12 @@ export default function App() {
         {allWaves.map((wave, index) => {
           return(
             <div key={index} style={{ backgroundColor:"OldLace", marginTop: "16px", padding: "8px" }}>
-              <div><strong><a href={wave.message}> {wave.message} </a></strong></div>
+              <div>
+                { wave.message.startsWith("http")
+                  ? <strong><a href={wave.message}> {wave.message} </a></strong>
+                  : <strong><a href={'https://' + wave.message }> {wave.message} </a></strong>
+                }
+              </div>
               <div className="transactionDetail">Sent: {wave.timestamp.toLocaleDateString("en-US")}</div>
               <div className="transactionDetail">From: {wave.address}</div>
             </div>
@@ -224,3 +229,5 @@ export default function App() {
     </div>
   );
 }
+
+
