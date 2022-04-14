@@ -1,13 +1,7 @@
-## Running React on Repl.it
+## Send me things to read on the blockchain
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+This React app communciates with a smart contract that allows friends to send me links to read that will be stored on the Ethereum blockchain.
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+This app was inspired by [buildspace](https://app.buildspace.so/home)'s intro Solidity project.
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
-
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the `.replit` file.
