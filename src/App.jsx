@@ -215,6 +215,9 @@ export default function App() {
         <div className="allWavesHeader">
           Previous Links
         </div>
+        <div className="allWavesDescription">
+          Will display after wallet is connected
+        </div>
         {allWaves.map((wave, index) => {
           return(
             <div key={index} style={{ backgroundColor:"OldLace", marginTop: "16px", padding: "8px" }}>

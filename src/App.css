@@ -50,13 +50,14 @@ a {
 
 .messageForm label{
   text-decoration:underline;
+  text-align: center;
 }
 
 #message{
   margin-top:16px;
-  text-align: center;
   display:block;
-  width: 100%
+  width: 100%;
+  text-align: center;
 }
 
 .allWavesHeader {
@@ -64,6 +65,14 @@ a {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+}
+
+.allWavesDescription{
+  text-align: center;
+  font-size: 12px;
+  margin-top:8px;
+  color: grey;
+  
 }
 
 .transactionDetail {
