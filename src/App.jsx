@@ -9,7 +9,7 @@ export default function App() {
   const [message, setMessage] = useState("");
   const [allWaves, setAllWaves] = useState([]);
   const [loading, setLoading] = useState(false)
-  const contractAddress ="0xC221dcfD27EBCf0164A7BA900CA9bB30ed3BCF6f"
+  const contractAddress ="0x8bE8DEbF36A198d6F10841CeFF135eAAF01c14af"
   const contractABI = abi.abi;
   
   const checkIfWalletIsConnected = async () => {
@@ -185,7 +185,11 @@ export default function App() {
           <p>I'm <a href="http://mattambrogi.com/">Matt</a>. This is a site for my friends who are into Ethereum and reading.  </p>
           <p>Start by connecting your MetaMask wallet. Then you can send me a link to something you think I should read!</p>
           <p>Every link will be stored as a transcation on the Ethereum blockchain. On top of that, the smart contract that powers this app may randomly reward you by sending a little bit of ETH to your wallet!</p>
-          <p>Note: you can't send more than one link in an hour.</p>
+          <p><strong>Two important notes:</strong></p>
+          <ul>
+            <li>This contract is deployed on the <strong>Rinkeby testnet</strong>. To interact with it, you will need to select Rinkeby from the network dropdown in MetaMask. If your Rinkeby account is not already funded, you need to add some test ETH, which you can do for free using <a href="https://rinkebyfaucet.com/">this faucet.</a></li>
+            <li>You can not send more than <strong>one link per hour</strong></li>
+          </ul>
         </div>
 
         <form className="messageForm" onSubmit={handleSubmit}>

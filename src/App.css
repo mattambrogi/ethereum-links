@@ -10,7 +10,7 @@ a {
   color:black;
   text-decoration: underline;
   text-decoration-color: blue;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 
 .dataContainer {
@@ -22,13 +22,13 @@ a {
 }
 
 .header {
-  text-align: center;
+  text-align: start;
   font-size: 32px;
   font-weight: 600;
 }
 
 .bio {
-  text-align: center;
+  text-align: start;
   color: black;
   margin-top: 16px;
 }
@@ -45,6 +45,7 @@ a {
 .messageForm{
   align-items:center;
   text-align: center;
+  margin-top:16px;
 }
 
 .messageForm label{
